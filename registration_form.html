@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<head>
+    <title>User Registration Form</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 50px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        
+    }
+    h2{
+        text-align: center;
+    }
+
+    form {
+
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    label {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    
+
+    #btn {
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        align-content: center;
+    }
+
+    .button {
+        text-align: center;
+    }
+</style>
+
+<body>
+
+   
+       
+    
+    <form>
+        <h2 id="a">Registration Form</h2>
+        <br>
+        <label>First Name</label><br><br>
+        <input type="text" id="f_name" name="first_name" required />
+        <br><br>
+        <label>Last Name</label><br><br>
+        <input type="text" id="l_name" name="last_name" required />
+        <br><br>
+        <label>Email Address</label><br><br>
+        <input type="text" id="mail_id" name="mail" placeholder="enter your email" required />
+        <br><br>
+        <label>Password</label><br><br>
+        <input type="password" id="pass_word" name="password" required />
+        <br><br>
+        <label>Confirm Password</label><br><br>
+        <input type="password" id="confirm_pw" name="confirm_password" required />
+        <br><br>
+        <label>Date Of Birth</label><br><br>
+        <input type="date" id="d_o_b" name="date_of_birth" required />
+        <br><br>
+        <label>Gender</label><br><br>
+        <input type="radio" id="male" name="Female" value="M" checked>male &nbsp;&nbsp;
+        <input type="radio" id="female" name="Female" value="F">Female &nbsp;&nbsp;
+        <input type="radio" id="others" name="Female" value="O">Others
+        <br><br>
+        <label>Profile Picture</label><br><br>
+        <input type="file" id="pp" name="profile_picture" />
+        <br><br>
+        <button type="submit" name="Upload" id="upload">Upload</button>
+        <br><br>
+        <h3>Terms and Conditions</h3>
+
+        <input type="checkbox" id="cb" name="check_box">I Agree the Terms and Conditions.
+        <br><br>
+        <div class="button">
+            <button type="submit" id="btn" name="submit">Register</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
